@@ -5,6 +5,10 @@ Individu::Individu(std::string nom, std::string prenom) {
 	setPrenom(prenom);
 }
 
+Individu::~Individu() {
+	supprimerLien();
+}
+
 void Individu::setNom(std::string nom) {
 	m_nom = nom;
 }
@@ -41,7 +45,7 @@ void Individu::majMaVoiture(Voiture* voiture) {
 	m_maVoiture = voiture;
 }
 
-void Individu::supprimerLiens() {
+void Individu::supprimerLien() {
 	Voiture* maVoiture = getMaVoiture();
 	if (maVoiture) {
 		maVoiture->majMonPilote(nullptr);
@@ -50,7 +54,7 @@ void Individu::supprimerLiens() {
 }
 
 void Individu::setMaVoiture(Voiture* voiture) {
-	supprimerLiens();
+	supprimerLien();
 	if (voiture) {
 		voiture->supprimerLien();
 		voiture->majMonPilote(this);

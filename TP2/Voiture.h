@@ -14,6 +14,7 @@ class Voiture {
 
 	public:
 		Voiture(std::string, std::string);
+		virtual ~Voiture();
 
 		void setMarque(std::string);
 		std::string getMarque();

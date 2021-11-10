@@ -16,6 +16,8 @@ class Individu {
 	public:
 		Individu(std::string, std::string);
 
+		virtual ~Individu();
+
 		void setNom(std::string);
 		std::string getNom();
 
@@ -30,7 +32,7 @@ class Individu {
 		//Link Methods : 
 		void majMaVoiture(Voiture*);
 
-		void supprimerLiens();
+		void supprimerLien();
 
 		void setMaVoiture(Voiture*);
 

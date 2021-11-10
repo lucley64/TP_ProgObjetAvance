@@ -5,6 +5,10 @@ Voiture::Voiture(std::string marque, std::string plaque) {
 	setPlaque(plaque);
 }
 
+Voiture::~Voiture() {
+	supprimerLien();
+}
+
 void Voiture::setMarque(std::string marque) {
 	m_marque = marque;
 }
@@ -52,7 +56,7 @@ void Voiture::supprimerLien() {
 void Voiture::setMonPilote(Individu* individu) {
 	supprimerLien();
 	if (individu) {
-		individu->supprimerLiens();
+		individu->supprimerLien();
 		individu->majMaVoiture(this);
 	}
 	majMonPilote(individu);
