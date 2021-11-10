@@ -21,13 +21,6 @@ std::string Individu::getPrenom() {
 	return m_prenom;
 }
 
-void Individu::setMaVoiture(Voiture* voiture) {
-	m_maVoiture = voiture;
-}
-
-Voiture* Individu::getMaVoiture() {
-	return m_maVoiture;
-}
 
 std::string Individu::toString() {
 	return "Nom : " + getNom() + ", Prenom : " + getPrenom();
@@ -42,4 +35,29 @@ std::string Individu::toStringAndLink() {
 	}
 
 	return retour;
+}
+
+void Individu::majMaVoiture(Voiture* voiture) {
+	m_maVoiture = voiture;
+}
+
+void Individu::supprimerLiens() {
+	Voiture* maVoiture = getMaVoiture();
+	if (maVoiture) {
+		maVoiture->majMonPilote(nullptr);
+		majMaVoiture(nullptr);
+	}
+}
+
+void Individu::setMaVoiture(Voiture* voiture) {
+	supprimerLiens();
+	if (voiture) {
+		voiture->supprimerLien();
+		voiture->majMonPilote(this);
+	}
+	majMaVoiture(voiture);
+}
+
+Voiture* Individu::getMaVoiture() {
+	return m_maVoiture;
 }

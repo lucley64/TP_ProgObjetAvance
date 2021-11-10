@@ -21,13 +21,6 @@ std::string Voiture::getPlaque() {
 	return m_plaque;
 }
 
-void Voiture::setMonPilote(Individu* individu) {
-	m_monPilote = individu;
-}
-
-Individu* Voiture::getMonPilote() {
-	return m_monPilote;
-}
 
 std::string Voiture::toString() {
 	return "Marque : " + getMarque() + ", Plaque : " + getPlaque();
@@ -42,4 +35,29 @@ std::string Voiture::toStringAndLink() {
 	}
 
 	return retour;
+}
+
+void Voiture::majMonPilote(Individu* individu) {
+	m_monPilote = individu;
+}
+
+void Voiture::supprimerLien() {
+	Individu* monPilote = getMonPilote();
+	if (monPilote) {
+		monPilote->majMaVoiture(nullptr);
+		majMonPilote(nullptr);
+	}
+}
+
+void Voiture::setMonPilote(Individu* individu) {
+	supprimerLien();
+	if (individu) {
+		individu->supprimerLiens();
+		individu->majMaVoiture(this);
+	}
+	majMonPilote(individu);
+}
+
+Individu* Voiture::getMonPilote() {
+	return m_monPilote;
 }

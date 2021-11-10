@@ -21,12 +21,19 @@ class Voiture {
 		void setPlaque(std::string);
 		std::string getPlaque();
 
-		void setMonPilote(Individu*);
-		Individu* getMonPilote();
 
 		std::string toString();
 
 		std::string toStringAndLink();
+
+		//Link methods :
+		void majMonPilote(Individu*);
+
+		void supprimerLien();
+
+		void setMonPilote(Individu*);
+
+		Individu* getMonPilote();
 };
 
 #endif // !VOITURE_H

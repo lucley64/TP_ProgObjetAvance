@@ -22,12 +22,19 @@ class Individu {
 		void setPrenom(std::string);
 		std::string getPrenom();
 
-		void setMaVoiture(Voiture*);
-		Voiture* getMaVoiture();
 
 		std::string toString();
 
 		std::string toStringAndLink();
+
+		//Link Methods : 
+		void majMaVoiture(Voiture*);
+
+		void supprimerLiens();
+
+		void setMaVoiture(Voiture*);
+
+		Voiture* getMaVoiture();
 };
 
 
