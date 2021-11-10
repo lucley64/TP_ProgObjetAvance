@@ -26,6 +26,8 @@ class Individu {
 		Voiture* getMaVoiture();
 
 		std::string toString();
+
+		std::string toStringAndLink();
 };
 
 

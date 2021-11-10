@@ -32,3 +32,14 @@ Individu* Voiture::getMonPilote() {
 std::string Voiture::toString() {
 	return "Marque : " + getMarque() + ", Plaque : " + getPlaque();
 }
+
+std::string Voiture::toStringAndLink() {
+	std::string retour = toString();
+	Individu* monPilote = getMonPilote();
+
+	if (monPilote) {
+		retour += ", " + monPilote->toString();
+	}
+
+	return retour;
+}

@@ -25,6 +25,8 @@ class Voiture {
 		Individu* getMonPilote();
 
 		std::string toString();
+
+		std::string toStringAndLink();
 };
 
 #endif // !VOITURE_H

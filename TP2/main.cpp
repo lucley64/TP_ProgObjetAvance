@@ -25,5 +25,13 @@ int main() {
 
 	std::cout << "Plaque de la voiture de l'individu 3 : " << ind3.getMaVoiture()->getPlaque() << std::endl;
 
+	voit3.setPlaque("77777NO22");
+
+	std::cout << "Plaque de la voiture de l'individu 3 : " << ind3.getMaVoiture()->getPlaque() << std::endl;
+
+	std::cout << "Individu 3 : " << ind3.toStringAndLink() << std::endl;
+
+	std::cout << "Individu 2 : " << ind2.toStringAndLink() << std::endl;
+
 	return 0;
 }

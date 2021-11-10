@@ -32,3 +32,14 @@ Voiture* Individu::getMaVoiture() {
 std::string Individu::toString() {
 	return "Nom : " + getNom() + ", Prenom : " + getPrenom();
 }
+
+std::string Individu::toStringAndLink() {
+	std::string retour = toString();
+	Voiture* maVoiture = getMaVoiture();
+
+	if (maVoiture) {
+		retour += ", " + maVoiture->toString();
+	}
+
+	return retour;
+}
