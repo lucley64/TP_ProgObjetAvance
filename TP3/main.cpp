@@ -112,5 +112,19 @@ void leMap() {
 		unPointeur++;
 	}
 
+	unPointeur = unAnnuaire.find("Philippe");
+	if (unPointeur != unAnnuaire.end()) {
+		cout << unPointeur->second << endl;
+	}
+	else {
+		cout << "Philippe clef inconnue" << endl;
+	}
 
+	unPointeur = unAnnuaire.find("Marqua");
+	if (unPointeur != unAnnuaire.end()) {
+		cout << unPointeur->second << endl;
+	}
+	else {
+		cout << "Marqua clef inconnue" << endl;
+	}
 }
