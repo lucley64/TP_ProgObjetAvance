@@ -9,7 +9,7 @@ public:
 	std::string m_libelle;
 	int m_prix;
 
-	Produits(std::string, std::string, int);
+	Produits(std::string reference, std::string libelle, int prix);
 
 	std::string toString();
 

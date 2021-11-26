@@ -10,7 +10,7 @@ public:
 	int m_prix;
 	int m_poid;
 
-	Piece (std::string, std::string, int, int);
+	Piece(std::string reference, std::string libelle, int prix, int poid);
 
 	std::string toString();
 };
