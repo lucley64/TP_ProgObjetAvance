@@ -1,7 +1,6 @@
 #include "Hotel.h"
 #include <algorithm>
 
-void detruireChambre(Chambre*);
 bool memeNumero(Chambre);
 
 Hotel::Hotel(const Hotel& hotel) :
@@ -20,8 +19,6 @@ Hotel::Hotel(string nom, string adresse) :
 	adresse(adresse){}
 
 Hotel::~Hotel() {
-	set<Chambre*>::iterator debut = mesChambres.begin(), fin = mesChambres.end();
-	for_each(debut, fin, detruireChambre);
 
 }
 
@@ -84,6 +81,3 @@ string Hotel::toString(string message) {
 	return resultat;
 }
 
-void detruireChambre(Chambre* chambre) {
-	delete chambre;
-}

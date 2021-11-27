@@ -147,6 +147,7 @@
     <ClCompile Include="Administrateur.cpp" />
     <ClCompile Include="Chambre.cpp" />
     <ClCompile Include="Hotel.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
