@@ -16,6 +16,7 @@ public:
 	virtual ~Administrateur();
 
 	Administrateur& operator=(const Administrateur& admin);
+	string toString(string message = "");
 };
 
 #endif // !ADMINISTRATEUR_H

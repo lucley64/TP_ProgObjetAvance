@@ -17,6 +17,7 @@ public:
 	virtual ~Chambre();
 
 	Chambre& operator= (const Chambre& chambre);
+	string toString(string message = "");
 };
 
 #endif // !CHAMBRE_H

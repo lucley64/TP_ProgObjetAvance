@@ -1,4 +1,5 @@
 #include "Chambre.h"
+#include <string>
 
 Chambre::Chambre(string numero, string etage, unsigned short int prix) :
 	numero(numero),
@@ -18,4 +19,9 @@ Chambre& Chambre::operator=(const Chambre& chambre) {
 	prix = chambre.prix;
 
 	return *this;
+}
+
+string Chambre::toString(string message)
+{
+	return numero + " | " + etage + " | " + to_string(prix);
 }

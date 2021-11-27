@@ -22,6 +22,8 @@ public:
 	bool inclutChambre(Chambre* chambre);
 	bool modifierPrixChambre(string numero, unsigned short int prix);
 
+	string toString(string message="");
+
 	string nom;
 	string adresse;
 	set<Chambre*> mesChambres;

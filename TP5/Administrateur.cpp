@@ -17,3 +17,7 @@ Administrateur& Administrateur::operator=(const Administrateur& admin) {
 	return *this;
 }
 
+string Administrateur::toString(string message)
+{
+	return identite + " | " + fonction;
+}

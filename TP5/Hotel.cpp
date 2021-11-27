@@ -65,6 +65,25 @@ bool Hotel::modifierPrixChambre(string numero, unsigned short int prix) {
 	return modification;
 }
 
+string Hotel::toString(string message) {
+	string resultat = message;
+
+	/// Intègre nom et adresse
+	resultat += nom + " | " + adresse + "\n";
+
+	/// Intègre lesAdministrateurs
+	set<Administrateur*>::iterator admin;
+	for (admin = lesAdministrateurs.begin(); admin != lesAdministrateurs.end(); admin++) {
+		resultat += (*admin)->toString("ADMIN : ") + "\n";
+	}
+	/// Intègre les chambres
+	set<Chambre*>::iterator chambre;
+	for (chambre = mesChambres.begin(); chambre != mesChambres.end(); chambre++) {
+		resultat += (*chambre)->toString("CHAMBRE : ") + "\n";
+	}
+	return resultat;
+}
+
 void detruireChambre(Chambre* chambre) {
 	delete chambre;
 }
