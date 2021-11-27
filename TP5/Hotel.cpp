@@ -2,6 +2,7 @@
 #include <algorithm>
 
 void detruireChambre(Chambre*);
+bool memeNumero(Chambre);
 
 Hotel::Hotel(const Hotel& hotel) :
 	nom(hotel.nom),
@@ -47,6 +48,21 @@ bool Hotel::administrePar(Administrateur* admin) {
 
 bool Hotel::inclutChambre(Chambre* chambre) {
 	return (mesChambres.insert(chambre).second);
+}
+
+bool Hotel::modifierPrixChambre(string numero, unsigned short int prix) {
+	bool modification = false;
+
+	set<Chambre*>::iterator chambre;
+	for (chambre = mesChambres.begin(); chambre != mesChambres.end(); chambre++) {
+		if ((*chambre)->numero == numero) {
+			(*chambre)->prix = prix;
+			modification = true;
+			break;
+		}
+	}
+
+	return modification;
 }
 
 void detruireChambre(Chambre* chambre) {

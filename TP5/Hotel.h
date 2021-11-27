@@ -20,6 +20,7 @@ public:
 
 	bool administrePar(Administrateur* admin);
 	bool inclutChambre(Chambre* chambre);
+	bool modifierPrixChambre(string numero, unsigned short int prix);
 
 	string nom;
 	string adresse;
