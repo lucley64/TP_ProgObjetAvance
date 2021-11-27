@@ -11,16 +11,20 @@ using namespace std;
 
 class Hotel {
 public:
-	Hotel();
+	Hotel(const Hotel& hotel);
+	Hotel(string nom="", string adresse="");
 
-	~Hotel();
+	virtual ~Hotel();
 
-private:
+	Hotel& operator=(const Hotel& hotel);
+
+	bool administrePar(Administrateur* admin);
+	bool inclutChambre(Chambre* chambre);
+
 	string nom;
 	string adresse;
 	set<Chambre*> mesChambres;
 	set<Administrateur*> lesAdministrateurs;
-
 
 };
 
