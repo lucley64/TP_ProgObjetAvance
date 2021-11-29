@@ -141,10 +141,12 @@
   <ItemGroup>
     <ClCompile Include="Magasin.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Panier.cpp" />
     <ClCompile Include="Produit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Magasin.h" />
+    <ClInclude Include="Panier.h" />
     <ClInclude Include="Produit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
