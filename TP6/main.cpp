@@ -2,11 +2,11 @@
 
 #include "Produit.h"
 
-typedef std::string	Libelle;
+/*typedef std::string	Libelle;
 typedef std::string	Code;
 typedef float		Prix;
 typedef int			Quantite;
-typedef std::string	Adresse;
+typedef std::string	Adresse;*/
 
 int main() {
 
@@ -15,6 +15,7 @@ int main() {
 			p3("FAUTEUIL",	"F001", 70);
 
 	std::cout << p1.toString() << std::endl << p2.toString() << std::endl << p3.toString() << std::endl;
+
 
 
 	return 0;
