@@ -19,7 +19,8 @@ std::string Magasin::toString(std::string message)
 	Stock::iterator iter = stock.begin();
 	while (iter != stock.end())
 	{
-		message += iter->first->toString() + " : " + std::to_string(iter->second);
+		message += iter->first->toString() + " : " + std::to_string(iter->second) + "\n";
+		iter++;
 	}
 
 	return message;
@@ -27,7 +28,7 @@ std::string Magasin::toString(std::string message)
 
 void Magasin::addProduit(Produit* produit, Quantite qt)
 {
-	if (!(stock.insert(Stock::value_type(produit, 1)).second))
+	if (!(stock.insert(Stock::value_type(produit, qt)).second))
 	{
 		Quantite qtStock =qt + stock.find(produit)->second;
 		stock.erase(produit);
