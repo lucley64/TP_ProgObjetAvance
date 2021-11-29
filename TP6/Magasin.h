@@ -20,7 +20,8 @@ public:
 
 	std::string toString(std::string message = "");
 
-	void addProduit(Produit*, Quantite = 1);
+	void addProduit(Produit* produit, Quantite qt=1);
+	//void addProduit(Stock::iterator begin, Stock::iterator end);
 
 };
 
