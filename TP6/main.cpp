@@ -3,6 +3,7 @@
 
 #include "Produit.h"
 #include "Magasin.h"
+#include "Panier.h"
 
 /*typedef std::string	Libelle;
 typedef std::string	Code;
@@ -28,6 +29,12 @@ int main() {
 	std::cout << std::endl << magasin1.toString() << std::endl;
 
 	//Pour le panier : 
+	Panier panier1(&magasin1);
+	panier1.acheter(&p1, 2);
+	panier1.acheter(&p2);
+	panier1.acheter(&p3);
+
+	panier1.editer();
 
 	return 0;
 }

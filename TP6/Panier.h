@@ -7,7 +7,7 @@
 #include "Produit.h"
 #include "Magasin.h"
 
-typedef std::list<std::pair<Produit*, Quantite>> Achats;
+typedef std::map<Produit*, Quantite> Achats;
 
 class Panier {
 public:
@@ -15,10 +15,10 @@ public:
 	Magasin* magasin;
 
 	Panier(const Panier& panier);
-	Panier(Achats achats, Magasin* magasin);
+	Panier(Magasin* magasin, Achats achats = Achats());
 
-	std::string toString();
-	void addProduit(Produit* produit, Quantite qt = 1);
+	void editer(std::string message="");
+	bool acheter(Produit* produit, Quantite qt = 1);
 
 };
 

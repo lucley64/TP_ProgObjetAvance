@@ -19,11 +19,11 @@ std::string Magasin::toString(std::string message)
 	Stock::iterator iter = stock.begin();
 	while (iter != stock.end())
 	{
-		message += iter->first->toString() + " : " + std::to_string(iter->second) + "\n";
+		retour += iter->first->toString() + " : " + std::to_string(iter->second) + "\n";
 		iter++;
 	}
 
-	return message;
+	return retour;
 }
 
 void Magasin::addProduit(Produit* produit, Quantite qt)
