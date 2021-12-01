@@ -15,7 +15,7 @@ Magasin::Magasin(Adresse adresse, Stock stock) :
 
 std::string Magasin::toString(std::string message)
 {
-	std::string retour = message + adresse + "\n";
+	std::string retour = message + adresse + "\n" + "Stock : \n";
 	Stock::iterator iter = stock.begin();
 	while (iter != stock.end())
 	{

@@ -21,7 +21,7 @@ public:
 	std::string toString(std::string message = "");
 
 	void addProduit(Produit* produit, Quantite qt=1);
-	//void addProduit(Stock::iterator begin, Stock::iterator end);
+	void enleverProduit(Produit* produit, Quantite qt = 1);
 
 };
 
