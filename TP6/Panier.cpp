@@ -1,4 +1,5 @@
 #include "Panier.h"
+#include <string>
 
 Panier::Panier(const Panier& panier):
 	magasin(panier.magasin),
@@ -14,7 +15,7 @@ void Panier::editer(std::string message)
 	Prix cout = 0;
 	Achats::iterator iter = achats.begin();
 	for (; iter != achats.end(); iter++) {
-		std::cout << iter->first->toString() << std::endl;
+		std::cout << iter->first->toString() << " : " << std::to_string(iter->second) << std::endl;
 		cout += (iter->first->prix * iter->second);
 	}
 	std::cout << "Prix total : " << cout << std::endl;
