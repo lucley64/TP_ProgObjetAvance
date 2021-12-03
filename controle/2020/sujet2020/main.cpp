@@ -5,7 +5,9 @@
 
 using namespace std;
 
-typedef multimap<IdentifantClient, Facture*> FacturePar
+typedef multimap<IdentifantClient, Facture*> FactureParClient;
+
+void penalite(FactureParClient::value_type);
 
 int main() {
 
@@ -16,7 +18,20 @@ int main() {
 
 	cout << f1.toString("Facture 1 : ") << endl << f2.toString("Facture 2 : ") << endl << f3.toString("Facture 3 : ") << endl << f4.toString("Facture 4 : ") << endl;
 
+	FactureParClient facturesImpayees;
+	facturesImpayees.insert(FactureParClient::value_type(f1.idClient, &f1));
+	facturesImpayees.insert(FactureParClient::value_type(f2.idClient, &f2));
+	facturesImpayees.insert(FactureParClient::value_type(f3.idClient, &f3));
+	facturesImpayees.insert(FactureParClient::value_type(f4.idClient, &f4));
+
+	cout << "Nombre de factures impayees par Patrick : " << facturesImpayees.count("Patrick") << endl;
+
+
 
 
 	return 0;
+}
+
+void penalite(FactureParClient::value_type factAPenaliser) {
+	factAPenaliser.second->montant *= 1.1;
 }
