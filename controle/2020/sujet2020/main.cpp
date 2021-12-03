@@ -1,5 +1,7 @@
 #include <iostream>
 #include <map>
+#include <algorithm>
+#include <list>
 
 #include "Facture.h"
 
@@ -26,7 +28,17 @@ int main() {
 
 	cout << "Nombre de factures impayees par Patrick : " << facturesImpayees.count("Patrick") << endl;
 
+	pair<FactureParClient::iterator, FactureParClient::iterator> resultatEqualRange;
 
+	resultatEqualRange = facturesImpayees.equal_range("Patrick");
+	for_each(resultatEqualRange.first, resultatEqualRange.second, penalite);
+
+	map<ReferenceFacture, list<Date>> relancesDesFacturesImpayees;
+	relancesDesFacturesImpayees.insert(map<ReferenceFacture, list<Date>>::value_type(f1.refFacture, list<Date>()));
+	map<ReferenceFacture, list<Date>>::iterator resultatFind;
+	resultatFind = relancesDesFacturesImpayees.find("F001");
+	resultatFind->second.push_back("01/02/2021");
+	resultatFind->second.push_back("01/04/2021");
 
 
 	return 0;
