@@ -1,8 +1,11 @@
 #include <iostream>
+#include <map>
 
 #include "Facture.h"
 
 using namespace std;
+
+typedef multimap<IdentifantClient, Facture*> FacturePar
 
 int main() {
 
