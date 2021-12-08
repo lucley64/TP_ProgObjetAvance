@@ -40,6 +40,11 @@ int main() {
 	resultatFind->second.push_back("01/02/2021");
 	resultatFind->second.push_back("01/04/2021");
 
+	string fin;
+	while (fin != "q") {
+		cout << "appuyer sur q pour finir" << endl;
+		cin >> fin;
+	}
 
 	return 0;
 }
