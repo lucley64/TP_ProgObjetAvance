@@ -140,9 +140,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Graphique.h" />
+    <ClInclude Include="GraphiqueCompose.h" />
+    <ClInclude Include="GraphiqueSimple.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="Terminal.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Graphique.cpp" />
+    <ClCompile Include="GraphiqueCompose.cpp" />
+    <ClCompile Include="GraphiqueSimple.cpp" />
+    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Terminal.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
