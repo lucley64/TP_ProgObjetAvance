@@ -3,9 +3,6 @@
 
 class Graphique {
 public:
-	virtual bool ajouter(Graphique*);
-	virtual bool supprimer(Graphique*);
-	virtual bool jeSuisCompose();
 
 	virtual void afficher() = 0;
 	virtual void effacer() = 0;

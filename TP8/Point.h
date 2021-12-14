@@ -9,7 +9,7 @@ private:
 	char motif;
 
 public:
-	Point(int, int, char);
+	Point(int, int, char='*');
 	void definir(int, int);
 	void deplacerDe(int, int);
 

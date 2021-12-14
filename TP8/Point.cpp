@@ -1,4 +1,5 @@
 #include "Point.h"
+#include "Terminal.h"
 
 Point::Point(int ligne, int colone, char motif):
 	motif(motif) {
@@ -6,5 +7,20 @@ Point::Point(int ligne, int colone, char motif):
 }
 
 void Point::dessiner(bool marquer) {
-	Terminal
+	if (marquer) {
+		Terminal::charLigneColone(ligne, colone, motif);
+	}
+	else {
+		Terminal::clear();
+	}
+	
+}
+
+void Point::definir(int ligne, int colone) {
+	this->ligne = ligne;
+	this->colone = colone;
+}
+
+void Point::deplacerDe(int ligne, int colone) {
+	definir(this->ligne + ligne, this->colone + colone);
 }
