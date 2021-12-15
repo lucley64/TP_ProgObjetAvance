@@ -4,8 +4,8 @@
 #include "GraphiqueSimple.h"
 
 class Point :public GraphiqueSimple{
-private:
-	int ligne, colone;
+protected:
+	int ligne, colonne;
 	char motif;
 
 public:

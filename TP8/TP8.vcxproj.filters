@@ -30,6 +30,9 @@
     <ClInclude Include="Terminal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Ligne.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Graphique.cpp">
@@ -48,6 +51,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ligne.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

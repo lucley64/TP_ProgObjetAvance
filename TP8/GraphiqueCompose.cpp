@@ -5,11 +5,19 @@ GraphiqueCompose::GraphiqueCompose() {
 }
 
 bool GraphiqueCompose::ajouter(Graphique* g) {
-	return enfants.insert(std::set<Graphique*>::value_type(g)).second;
+	bool retour = false;
+	if (g) {
+		retour = enfants.insert(std::set<Graphique*>::value_type(g)).second;
+	}
+	return retour;
 }
 
 bool GraphiqueCompose::supprimer(Graphique* g) {
-	return enfants.erase(g) > 1;
+	bool retour = false;
+	if (g) {
+		retour = enfants.erase(g) > 1;
+	}
+	return retour;
 }
 
 bool GraphiqueCompose::jeSuisCompose() {
@@ -30,9 +38,9 @@ void GraphiqueCompose::effacer() {
 	}
 }
 
-void GraphiqueCompose::deplacerDe(int ligne, int colone) {
+void GraphiqueCompose::deplacerDe(int ligne, int colonne) {
 	std::set<Graphique*>::iterator enfant;
 	for (enfant = enfants.begin(); enfant != enfants.end(); enfant++) {
-		(*enfant)->deplacerDe(ligne, colone);
+		(*enfant)->deplacerDe(ligne, colonne);
 	}
 }
