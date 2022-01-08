@@ -1,0 +1,193 @@
+# depslib dependency file v1.0
+1484048112 source:\\jaizkibel\einfo\lopis\mesdocs\enseignement\algorithmique et programmation\m3105\semaine9-serpent\serpent\main.cpp
+	"ElementsDeJeu.h"
+	"MoteurDeJeu.h"
+
+1484048188 \\jaizkibel\einfo\lopis\mesdocs\enseignement\algorithmique et programmation\m3105\semaine9-serpent\serpent\elementsdejeu.h
+	<assert.h>
+	<windows.h>
+	<conio.h>
+	<stdio.h>
+	<iostream>
+	<list>
+
+1484048238 \\jaizkibel\einfo\lopis\mesdocs\enseignement\algorithmique et programmation\m3105\semaine9-serpent\serpent\moteurdejeu.h
+	<windows.h>
+	<conio.h>
+	<time.h>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"ElementsDeJeu.h"
+
+1484048112 source:h:\mesdocs\enseignement\algorithmique et programmation\m3105\semaine9-serpent\serpent\main.cpp
+	"ElementsDeJeu.h"
+	"MoteurDeJeu.h"
+
+1545385087 h:\mesdocs\enseignement\algorithmique et programmation\m3105\semaine9-serpent\serpent\elementsdejeu.h
+	<assert.h>
+	<windows.h>
+	<conio.h>
+	<stdio.h>
+	<iostream>
+	<list>
+
+1484048238 h:\mesdocs\enseignement\algorithmique et programmation\m3105\semaine9-serpent\serpent\moteurdejeu.h
+	<windows.h>
+	<conio.h>
+	<time.h>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"ElementsDeJeu.h"
+
+1484048112 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\semaine09-serpent\serpent\main.cpp
+	"ElementsDeJeu.h"
+	"MoteurDeJeu.h"
+
+1545385199 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\semaine09-serpent\serpent\elementsdejeu.h
+	<assert.h>
+	<windows.h>
+	<conio.h>
+	<stdio.h>
+	<iostream>
+	<list>
+
+1484048238 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\semaine09-serpent\serpent\moteurdejeu.h
+	<windows.h>
+	<conio.h>
+	<time.h>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"ElementsDeJeu.h"
+
+1609334680 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\main.cpp
+	"MoteurDeJeu.h"
+
+1609329136 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\elementsdejeu.h
+	<assert.h>
+	<windows.h>
+	<conio.h>
+	<stdio.h>
+	<iostream>
+
+1609326653 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\moteurdejeu.h
+	<windows.h>
+	<conio.h>
+	<time.h>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"Cadre.h"
+	"Serpent.h"
+	"Cible.h"
+
+1609761537 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\include\cadre.h
+	<iostream>
+	<windows.h>
+
+1609352076 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\include\serpent.h
+	<ElementDeJeu.h>
+	<list>
+
+1609350489 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\include\elementdejeu.h
+	<assert.h>
+	"Cadre.h"
+
+1609351611 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\include\cible.h
+	"ElementDeJeu.h"
+
+1609351560 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\src\cible.cpp
+	"Cible.h"
+
+1609351117 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\include\moteurdejeu.h
+	<iostream>
+	<conio.h>
+	<time.h>
+	"Cadre.h"
+	"Serpent.h"
+	"Cible.h"
+
+1609351465 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\src\cadre.cpp
+	"Cadre.h"
+
+1609686127 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\src\moteurdejeu.cpp
+	"MoteurDeJeu.h"
+
+1609352638 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpent\src\serpent.cpp
+	"Serpent.h"
+
+1609334680 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpentincomplet\main.cpp
+	"MoteurDeJeu.h"
+
+1609351117 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpentincomplet\include\moteurdejeu.h
+	<iostream>
+	<conio.h>
+	<time.h>
+	"Cadre.h"
+	"Serpent.h"
+	"Cible.h"
+
+1609762518 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpentincomplet\include\cadre.h
+	<iostream>
+	<windows.h>
+
+1609762653 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpentincomplet\include\serpent.h
+	<ElementDeJeu.h>
+	<list>
+
+1609762343 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpentincomplet\include\elementdejeu.h
+	<assert.h>
+	"Cadre.h"
+
+1609762541 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpentincomplet\include\cible.h
+	"ElementDeJeu.h"
+
+1609761528 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpentincomplet\src\cadre.cpp
+	"Cadre.h"
+
+1609351560 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpentincomplet\src\cible.cpp
+	"Cible.h"
+
+1609352638 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\serpentincomplet\src\serpent.cpp
+	"Serpent.h"
+
+1609763010 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\tdréalisé\serpentincomplet-20210105\serpentincomplet\main.cpp
+	"MoteurDeJeu.h"
+
+1609763010 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\tdréalisé\serpentincomplet-20210105\serpentincomplet\include\moteurdejeu.h
+	<iostream>
+	<conio.h>
+	<time.h>
+	"Cadre.h"
+	"Serpent.h"
+	"Cible.h"
+
+1609831846 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\tdréalisé\serpentincomplet-20210105\serpentincomplet\include\cadre.h
+	<iostream>
+	<windows.h>
+
+1609763010 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\tdréalisé\serpentincomplet-20210105\serpentincomplet\include\serpent.h
+	<ElementDeJeu.h>
+	<list>
+
+1609763010 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\tdréalisé\serpentincomplet-20210105\serpentincomplet\include\elementdejeu.h
+	<assert.h>
+	"Cadre.h"
+
+1609920513 c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\tdréalisé\serpentincomplet-20210105\serpentincomplet\include\cible.h
+	"ElementDeJeu.h"
+
+1609763010 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\tdréalisé\serpentincomplet-20210105\serpentincomplet\src\cadre.cpp
+	"Cadre.h"
+
+1609763010 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\tdréalisé\serpentincomplet-20210105\serpentincomplet\src\serpent.cpp
+	"Serpent.h"
+
+1609835201 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\tdréalisé\serpentincomplet-20210105\serpentincomplet\src\cible.cpp
+	"Cible.h"
+
+1609920416 source:c:\users\lopis\onedrive iut\onedrive - iut de bayonne\enseignement\m3105\2020-2021\semaine09-serpent\tdréalisé\serpentincomplet-20210105\serpentincomplet\src\moteurdejeu.cpp
+	"MoteurDeJeu.h"
+

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Cadre" Collapsed="true">
+    <Position X="3.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAICAAAAAAAEAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\luc\Desktop\travail\IUT\S3\M31 05\TP_ProgObjetAvance\TP_ProgObjetAvance\TP10\Cadre.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cible" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAAAAAAAAAAAAAQAEIAAAAEAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\luc\Desktop\travail\IUT\S3\M31 05\TP_ProgObjetAvance\TP_ProgObjetAvance\TP10\Cible.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElementDeJeu" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\luc\Desktop\travail\IUT\S3\M31 05\TP_ProgObjetAvance\TP_ProgObjetAvance\TP10\ElementDeJeu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Graphique" Collapsed="true">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\luc\Desktop\travail\IUT\S3\M31 05\TP_ProgObjetAvance\TP_ProgObjetAvance\TP10\Graphique.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoteurDeJeu" Collapsed="true">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAACAAAAAAAACAAAAAAAAIAAAAAAAQQAQEAKAAA=</HashCode>
+      <FileName>C:\Users\luc\Desktop\travail\IUT\S3\M31 05\TP_ProgObjetAvance\TP_ProgObjetAvance\TP10\MoteurDeJeu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PieceComposant" Collapsed="true">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>C:\Users\luc\Desktop\travail\IUT\S3\M31 05\TP_ProgObjetAvance\TP_ProgObjetAvance\TP10\PieceComposant.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Serpent" Collapsed="true">
+    <Position X="12.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgAAAAAAQAAJAAAAgAMAAAAAMAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\luc\Desktop\travail\IUT\S3\M31 05\TP_ProgObjetAvance\TP_ProgObjetAvance\TP10\Serpent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="Coordonnees" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\luc\Desktop\travail\IUT\S3\M31 05\TP_ProgObjetAvance\TP_ProgObjetAvance\TP10\Cadre.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
