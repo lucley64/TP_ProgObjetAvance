@@ -15,6 +15,8 @@ Serpent::Serpent (Cadre* unCadre, Coordonnees xy, char carCorps, char carTete) {
 
     direction = STOP;
     vitesse   = VITESSE_MIN;
+
+    invincibilite = 0;
 }
 
 // afficher : Affiche tout le serpent
@@ -43,7 +45,6 @@ bool Serpent::seTrouveEn (const Coordonnees xy) {
 
 // avancerEn : Met � jour les donn�es du serpent qui progresse en position xy
 void Serpent::avancerEn (const Coordonnees xy) {
-    assert(xy.first > 0 && xy.first < LARGEUR_CADRE && xy.second > 0 && xy.second < HAUTEUR_CADRE);
     // On place les nouvelles coordonn�ee xy en d�but de liste
     corps.push_front (xy);
     // S'il n'y a pas de cr�dit pour prolonger la queue du serpent...

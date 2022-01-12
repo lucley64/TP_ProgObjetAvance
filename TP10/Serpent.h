@@ -1,9 +1,9 @@
 /**
  @file Serpent.h
- @brief spécifie deltaX, deltaY, Serpent
-Attributs : pparenceCorps, apparenceTete, corps, direction, vitesse, créditLongueur, score
-Méthodes  : Serpent, afficher, effacer, seTrouveEn, avancerEn
- @author Lopistéguy
+ @brief spï¿½cifie deltaX, deltaY, Serpent
+Attributs : pparenceCorps, apparenceTete, corps, direction, vitesse, crï¿½ditLongueur, score
+Mï¿½thodes  : Serpent, afficher, effacer, seTrouveEn, avancerEn
+ @author Lopistï¿½guy
  @version 0.1
  @date jj/mm/aaa
 **/
@@ -14,12 +14,12 @@ Méthodes  : Serpent, afficher, effacer, seTrouveEn, avancerEn
 #include "ElementDeJeu.h"
 #include <list>
 
-// Définitions sur l'apparence du serpent
-#define APPARENCE_TETE  '@'  // La tête du serpent
+// Dï¿½finitions sur l'apparence du serpent
+#define APPARENCE_TETE  '@'  // La tï¿½te du serpent
 #define APPARENCE_CORPS 'o'  // Le corps du serpent
 
-// Définitions relatives aux déplacements de la tête du serpent
-// Note : le coin supérieur gauche de l'écran est (0, 0)
+// Dï¿½finitions relatives aux dï¿½placements de la tï¿½te du serpent
+// Note : le coin supï¿½rieur gauche de l'ï¿½cran est (0, 0)
 #define STOP   0
 #define DROITE 1
 #define GAUCHE 2
@@ -28,24 +28,26 @@ Méthodes  : Serpent, afficher, effacer, seTrouveEn, avancerEn
 const int deltaX[] = {0, 1, -1, 0, 0};
 const int deltaY[] = {0, 0, 0, -1, 1};
 
-// Définitions des bornes de vitesse du serpent
+// Dï¿½finitions des bornes de vitesse du serpent
 #define VITESSE_MAX 9
 #define VITESSE_MIN 1
-#define GRAIN_DE_TEMPS 100 // qui s'écoule en millisecondes entre 2 déplacements
+#define GRAIN_DE_TEMPS 100 // qui s'ï¿½coule en millisecondes entre 2 dï¿½placements
 
 class Serpent : public ElementDeJeu {
 
-/// ATTRIBUTS : apparenceCorps, apparenceTete, corps, direction, vitesse, créditLongueur, score
+/// ATTRIBUTS : apparenceCorps, apparenceTete, corps, direction, vitesse, crï¿½ditLongueur, score
 private:
     char apparenceCorps;                // Apparence du corps du serpent
-    char apparenceTete;                 // Apparence de la tête du serpent
-    typedef list <Coordonnees> Corps;   // Définition du type Corps
+    char apparenceTete;                 // Apparence de la tï¿½te du serpent
+    typedef list <Coordonnees> Corps;   // Dï¿½finition du type Corps
 public:
-    Corps corps;                        // Le corps est une liste de coordonnées
+    Corps corps;                        // Le corps est une liste de coordonnï¿½es
     int direction;                      // STOP, HAUT, BAS, DROITE,GAUCHE vers laquelle se dirige le serpent
-    int vitesse;                        // VITESSE_MIN..VITESSE_MAX a laquelle se déplace le serpent
+    int vitesse;                        // VITESSE_MIN..VITESSE_MAX a laquelle se dï¿½place le serpent
     int score;                          // Que cumule le serpent en touchant les cibles
-    unsigned int creditLongueur;        // Non encore crédité dans la queue du serpent
+    unsigned int creditLongueur;        // Non encore crï¿½ditï¿½ dans la queue du serpent
+
+    int invincibilite;
 
 /// CONSTRUCTEUR
 public:
@@ -62,7 +64,7 @@ public:
     // seTrouveEn : Dit si le serpent occupe la position xy
     bool seTrouveEn (const Coordonnees xy);
 
-    // avancerEn : Met à jour les données du serpent qui progresse en position xy
+    // avancerEn : Met ï¿½ jour les donnï¿½es du serpent qui progresse en position xy
     void avancerEn (const Coordonnees xy);
 };
 

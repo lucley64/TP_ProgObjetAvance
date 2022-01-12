@@ -1,9 +1,9 @@
 /**
  @file MoteurDeJeu.h
- @brief spécifie MoteurDeJeu
+ @brief spï¿½cifie MoteurDeJeu
 Attributs : cadre, serpent, cible
-Méthodes  : MoteurDejeu, installer, jouer, terminer, lireDirective, random, getRandomCoordonnées
- @author Lopistéguy
+Mï¿½thodes  : MoteurDejeu, installer, jouer, terminer, lireDirective, random, getRandomCoordonnï¿½es
+ @author Lopistï¿½guy
  @version 0.1
  @date jj/mm/aaa
 **/
@@ -12,12 +12,13 @@ Méthodes  : MoteurDejeu, installer, jouer, terminer, lireDirective, random, getR
 #define MOTEURDEJEU_H
 
 #include <iostream>
-#include <conio.h>   // Pour gérer la saisie a la volée
-#include <time.h>    // Pour gérer la temporisation
+#include <conio.h>   // Pour gï¿½rer la saisie a la volï¿½e
+#include <time.h>    // Pour gï¿½rer la temporisation
 
 #include "Cadre.h"
 #include "Serpent.h"
 #include "Cible.h"
+#include "Etoile.h"
 
 // DECLARATION DES DIRECTIVES RECONNUES AU CLAVIER
 #define DIRECTIVE_STOP      '5'
@@ -36,33 +37,34 @@ class MoteurDeJeu {
 /// ATTRIBUTS : -cadre, -serpent, -cible
 private:
     Cadre*   cadre;   // Dans lequel s'inscrit le jeu
-    Serpent* serpent; // Que le joueur déplace vers la cible
-    Cible*   cible;   // Qui se régénère et rapporte du crédit dès quelle est touchée
+    Serpent* serpent; // Que le joueur dï¿½place vers la cible
+    Cible*   cible;   // Qui se rï¿½gï¿½nï¿½re et rapporte du crï¿½dit dï¿½s quelle est touchï¿½e
+    Etoile*  etoile;
 
 /// CONSTRUCTEUR
 public:
     MoteurDeJeu ();
 
-/// METHODES SPECIFIQUES : installer, jouer, terminer, -lireDirective, -random, -getRandomCoordonnées
+/// METHODES SPECIFIQUES : installer, jouer, terminer, -lireDirective, -random, -getRandomCoordonnï¿½es
 public:
     // installer : Installe le jeu
     void installer ();
 
-    // jouer : Gère le déroulement du jeu
+    // jouer : Gï¿½re le dï¿½roulement du jeu
     void jouer ();
 
     // terminer : Termine le jeu
     void terminer ();
 
-/// Méthodes privées : lireDirective, getRandomCoordonnées, random
+/// Mï¿½thodes privï¿½es : lireDirective, getRandomCoordonnï¿½es, random
 private:
-    // lireDirective : Retourne l'éventuel caractère saisi au clavier
+    // lireDirective : Retourne l'ï¿½ventuel caractï¿½re saisi au clavier
     char lireDirective();
 
     // getRandomCoordonnees : Retourne des coordonnees inscrites dans le cadre
     Coordonnees getRandomCoordonnees ();
 
-    // random : Retourne une valeur aléatoire
+    // random : Retourne une valeur alï¿½atoire
     int random ();
 };
 #endif // MOTEURDEJEU_H

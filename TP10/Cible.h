@@ -1,9 +1,9 @@
 /**
  @file Cible.h
- @brief spécifie Cible
+ @brief spï¿½cifie Cible
 Attributs : position, valeur
-Méthodes  : Cible, definir, afficher, effacer, seTrouverEn
- @author Lopistéguy
+Mï¿½thodes  : Cible, definir, afficher, effacer, seTrouverEn
+ @author Lopistï¿½guy
  @version 0.1
  @date jj/mm/aaa
 **/
@@ -16,16 +16,16 @@ class Cible : public ElementDeJeu {
 
 /// ATTRIBUTS : position, valeur
 public:
-    Coordonnees position;   // A l'intérieur du cadre
+    Coordonnees position;   // A l'intï¿½rieur du cadre
     unsigned int valeur;    // Entre 1 et 9
 
 /// CONSTRUCTEUR
 public:
     Cible (Cadre* unCadre, const Coordonnees unePosition, const unsigned int unevaleur);
 
-/// METHODE SPECIFIQUES : définir, afficher, effacer, seTrouveEn
+/// METHODE SPECIFIQUES : dï¿½finir, afficher, effacer, seTrouveEn
 public:
-    // definir : (Re)Définit les propriétés de la cible
+    // definir : (Re)Dï¿½finit les propriï¿½tï¿½s de la cible
     void definir (const Coordonnees unePosition, const unsigned int uneValeur);
 
     // afficher : Affiche a cible
