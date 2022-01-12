@@ -1,9 +1,9 @@
 /**
  @file Cadre.h
- @brief spécifie Coordonnees, Cadre
+ @brief spï¿½cifie Coordonnees, Cadre
 Attributs : apparence
-Méthodes  : Cadre, gotoXY, gotoXY, gotoXY, afficher, seTrouverEn
- @author Lopistéguy
+Mï¿½thodes  : Cadre, gotoXY, gotoXY, gotoXY, afficher, seTrouverEn
+ @author Lopistï¿½guy
  @version 0.1
  @date jj/mm/aaa
 **/
@@ -12,7 +12,8 @@ Méthodes  : Cadre, gotoXY, gotoXY, gotoXY, afficher, seTrouverEn
 #define CADRE_H
 
 #include <iostream>
-#include <windows.h> // Pour les valeurs aléatoires et effacer l'écran
+#include <windows.h> // Pour les valeurs alï¿½atoires et effacer l'ï¿½cran
+#include <assert.h>
 
 #define LARGEUR_CADRE   79
 #define HAUTEUR_CADRE   23
@@ -20,7 +21,7 @@ Méthodes  : Cadre, gotoXY, gotoXY, gotoXY, afficher, seTrouverEn
 
 using namespace std;
 
-typedef pair<int, int> Coordonnees; // Pour localiser les parties des éléments de jeu
+typedef pair<int, int> Coordonnees; // Pour localiser les parties des ï¿½lï¿½ments de jeu
 
 class Cadre {
 /// ATTRIBUTS : apparence
@@ -33,22 +34,22 @@ public:
 
 /// METHODES SPECIFIQUES : gotoXY gotoXYint, gotoXYchar, gotoXYstring, afficher, seTrouveEn
 public:
-    // gotoXY : positionne le curseur en xy - repère cartésien (0,0) en haut à gauche
+    // gotoXY : positionne le curseur en xy - repï¿½re cartï¿½sien (0,0) en haut ï¿½ gauche
     void gotoXY (const Coordonnees xy);
 
-    // gotoXY : positionne le curseur en xy et écrit int
+    // gotoXY : positionne le curseur en xy et ï¿½crit int
     void gotoXY (const Coordonnees xy, const unsigned int i);
 
-    // gotoXY : positionne le curseur en xy et écrit char
+    // gotoXY : positionne le curseur en xy et ï¿½crit char
     void gotoXY (const Coordonnees xy, char c);
 
-    // gotoXY : positionne le curseur en xy et écrit string
+    // gotoXY : positionne le curseur en xy et ï¿½crit string
     void gotoXY (const Coordonnees xy, string s);
 
     // afficher : affiche le cadre
     void afficher ();
 
-    // seTrouveEn : dit si le cadre occupe les coordonnées xy
+    // seTrouveEn : dit si le cadre occupe les coordonnï¿½es xy
     bool seTrouveEn (const Coordonnees xy);
 };
 

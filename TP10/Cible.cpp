@@ -4,14 +4,14 @@ Cible::Cible (Cadre* unCadre, const Coordonnees unePosition, const unsigned int 
     assert(unCadre);
     cadre = unCadre; // Dans lequel s'inscrit la cible
     assert(uneValeur > 0 && uneValeur < 10);
-    //assert(cadre->seTrouveEn(unePosition));
+    assert(unePosition.first > 0 && unePosition.first < LARGEUR_CADRE && unePosition.second > 0 && unePosition.second < HAUTEUR_CADRE);
     definir (unePosition, uneValeur);
 }
 
-// definir : (Re)Définit les propriétés de la cible
+// definir : (Re)Dï¿½finit les propriï¿½tï¿½s de la cible
 void Cible::definir (const Coordonnees unePosition, const unsigned int uneValeur) {
     assert(uneValeur > 0 && uneValeur < 10);
-    //assert(cadre->seTrouveEn(unePosition));
+    assert(unePosition.first > 0 && unePosition.first < LARGEUR_CADRE && unePosition.second > 0 && unePosition.second < HAUTEUR_CADRE);
     position = unePosition;
     valeur = uneValeur;
 }

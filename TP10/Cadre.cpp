@@ -4,7 +4,7 @@ Cadre::Cadre (char carCadre) {
     apparence = carCadre;
 }
 
-// gotoXY : positionne le curseur en xy - repère cartésien (0,0) en bas à gauche
+// gotoXY : positionne le curseur en xy - repï¿½re cartï¿½sien (0,0) en bas ï¿½ gauche
 void Cadre::gotoXY (const Coordonnees xy) {
     COORD coord;
     coord.X = xy.first;
@@ -12,17 +12,17 @@ void Cadre::gotoXY (const Coordonnees xy) {
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 
-// gotoXYint : positionne le curseur en xy et écrit i
+// gotoXYint : positionne le curseur en xy et ï¿½crit i
 void Cadre::gotoXY (const Coordonnees xy, const unsigned int i) {
     gotoXY(xy); cout << i;
 }
 
-// gotoXYchar : positionne le curseur en xy et écrit c
+// gotoXYchar : positionne le curseur en xy et ï¿½crit c
 void Cadre::gotoXY (const Coordonnees xy, char c) {
     gotoXY(xy); cout << c;
 }
 
-// gotoXYstring : positionne le curseur en xy et écrit s
+// gotoXYstring : positionne le curseur en xy et ï¿½crit s
 void Cadre::gotoXY (const Coordonnees xy, string s) {
     gotoXY(xy); cout << s;
 }
@@ -39,7 +39,7 @@ void Cadre::afficher () {
     }
 }
 
-// seTrouveEn : dit si le cadre occupe les coordonnées xy
+// seTrouveEn : dit si le cadre occupe les coordonnï¿½es xy
 bool Cadre::seTrouveEn (const Coordonnees xy) {
     return ((xy.first == LARGEUR_CADRE || xy.second == HAUTEUR_CADRE || xy.first == 0 || xy.second == 0) ? true : false);
 }

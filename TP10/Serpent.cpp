@@ -4,8 +4,8 @@ Serpent::Serpent (Cadre* unCadre, Coordonnees xy, char carCorps, char carTete) {
     assert(unCadre);
     cadre = unCadre; // Dans lequel s'inscrit le serpent
 
-    // Initialise le corps à l'unique coordonnée xy
-    //assert(cadre->seTrouveEn(xy));
+    // Initialise le corps ï¿½ l'unique coordonnï¿½e xy
+    assert(xy.first > 0 && xy.first < LARGEUR_CADRE && xy.second > 0 && xy.second < HAUTEUR_CADRE);
     corps.clear(); corps.push_front(xy);
     apparenceCorps = carCorps;
     apparenceTete  = carTete;
@@ -20,7 +20,7 @@ Serpent::Serpent (Cadre* unCadre, Coordonnees xy, char carCorps, char carTete) {
 // afficher : Affiche tout le serpent
 void Serpent::afficher () {
     Corps::iterator iter = corps.begin();
-    // Afficher la tête
+    // Afficher la tï¿½te
     cadre->gotoXY (*iter, apparenceTete);
     // Afficher le reste du corps
     while (++iter != corps.end()) {
@@ -41,16 +41,16 @@ bool Serpent::seTrouveEn (const Coordonnees xy) {
     return false;
 }
 
-// avancerEn : Met à jour les données du serpent qui progresse en position xy
+// avancerEn : Met ï¿½ jour les donnï¿½es du serpent qui progresse en position xy
 void Serpent::avancerEn (const Coordonnees xy) {
-    //assert(cadre->seTrouveEn(xy));
-    // On place les nouvelles coordonnéee xy en début de liste
+    assert(xy.first > 0 && xy.first < LARGEUR_CADRE && xy.second > 0 && xy.second < HAUTEUR_CADRE);
+    // On place les nouvelles coordonnï¿½ee xy en dï¿½but de liste
     corps.push_front (xy);
-    // S'il n'y a pas de crédit pour prolonger la queue du serpent...
+    // S'il n'y a pas de crï¿½dit pour prolonger la queue du serpent...
     if (creditLongueur == 0)
-        // ... on retire le dernier élément de la liste
+        // ... on retire le dernier ï¿½lï¿½ment de la liste
         corps.pop_back ();
     else
-        // ... sinon on ne retire pas le dernier élément mais on diminue le crédit
+        // ... sinon on ne retire pas le dernier ï¿½lï¿½ment mais on diminue le crï¿½dit
         creditLongueur--;
 }
